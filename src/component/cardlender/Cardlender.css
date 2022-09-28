@@ -1,0 +1,50 @@
+.content-box {
+    display: flex;
+    width: 95%;
+    height: 100px;
+    background-color: rgb(245 158 11);
+    margin: 15px auto ;
+    align-items: center;
+    position: relative;
+}
+.object-box {
+    width: 200px;
+    margin-left: 300px;
+}
+.object-box > p {
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.object-box > p:nth-child(2) {
+    color: rgb(220 38 38);
+    font-weight: bolder;
+}
+
+.delete {
+    display: flex;
+    flex-direction: row;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    top: -10px;
+    right: -10px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    transition: .5s;
+    cursor: pointer;
+}
+.delete p {
+    flex-grow: 1 ;
+    font-weight: bold;
+}
+
+.delete:hover {
+    background-color: #bfc;
+}
